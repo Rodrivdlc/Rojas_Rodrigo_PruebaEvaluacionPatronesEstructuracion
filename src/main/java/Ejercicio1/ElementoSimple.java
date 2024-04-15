@@ -7,7 +7,11 @@ package src.main.java.Ejercicio1;
 public class ElementoSimple implements Elemento {
     private double precio;
     private int codigo;
-
+    /**
+     * Constructor de la clase ElementoSimple.
+     * @param precio El precio del elemento simple.
+     * @param codigo El codigo del elemento simple.
+     */
     public ElementoSimple(double precio, int codigo) {
         this.precio = precio;
         this.codigo = codigo;
