@@ -16,7 +16,10 @@ public class ElementoSimple implements Elemento {
         this.precio = precio;
         this.codigo = codigo;
     }
-
+    /**
+     * Obtiene el precio del elemento simple.
+     * @return El precio del elemento simple.
+     */
     @Override
     public double getPrecio() {
         return precio;
