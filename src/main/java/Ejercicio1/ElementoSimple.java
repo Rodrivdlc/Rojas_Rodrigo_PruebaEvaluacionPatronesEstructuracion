@@ -24,7 +24,10 @@ public class ElementoSimple implements Elemento {
     public double getPrecio() {
         return precio;
     }
-
+    /**
+     * Obtiene el codigo del elemento simple.
+     * @return El codigo del elemento simple.
+     */
     @Override
     public int getCodigo() {
         return codigo;
