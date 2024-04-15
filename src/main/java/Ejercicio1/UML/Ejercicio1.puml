@@ -1,0 +1,30 @@
+@startuml
+
+interface Elemento {
+    +getPrecio(): double
+    +getCodigo(): int
+}
+
+class ElementoSimple {
+    -precio: double
+    -codigo: int
+    +ElementoSimple(precio: double, codigo: int)
+    +getPrecio(): double
+    +getCodigo(): int
+}
+
+class Kit {
+    -elementos: List<Elemento>
+    -codigo: int
+    +Kit(codigo: int)
+    +addElemento(elemento: Elemento): void
+    +getPrecio(): double
+    +getCodigo(): int
+}
+
+Elemento <|-- ElementoSimple
+Elemento <|-- Kit
+Elemento <|.. Kit
+
+@enduml
+
